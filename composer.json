@@ -1,0 +1,19 @@
+{
+    "name": "Watchers",
+    "type" : "project",
+    "require":{
+        "illuminate/database":"5.0.0",
+        "slim/slim":"2.0.0",
+        "php":">=5.4.0"
+    },
+    
+    "autoload":{
+    "psr-0":{
+        "watchers":"src",
+        "configuration":"src"    
+    }
+}
+
+}
+
+

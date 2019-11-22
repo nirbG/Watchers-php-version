@@ -1,0 +1,2400 @@
+/* CSS talk bubble */
+.talk-bubble {
+    position: relative;
+    width: 200px;
+    height: max-content;
+    background-color: #FFF;
+margin-bottom:2%;
+}
+.border-bubble{
+    border: 5px solid #666;
+}
+.round{
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+
+}
+
+
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border-bubble.btm-left-in:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 30px;
+    right: auto;
+    top: auto;
+    bottom: -40px;
+    border: 20px solid;
+    border-color: #666 transparent transparent #666;
+}
+.tri-right.btm-left-in:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 38px;
+    right: auto;
+    top: auto;
+    bottom: -20px;
+    border: 12px solid;
+    border-color: #FFF transparent transparent #FFF;
+}
+
+/*Right triangle, placed bottom right side slightly in*/
+.tri-right.border-bubble.btm-right-in:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: 30px;
+    bottom: -40px;
+    border: 20px solid;
+    border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right-in:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: 38px;
+    bottom: -20px;
+    border: 12px solid;
+    border-color: #FFF #FFF transparent transparent;
+}
+
+
+/* talk bubble contents */
+.talktext{
+    text-align: left;
+    line-height: 1.5em;
+    padding: 0%;
+}
+.talktext p{
+    /* remove webkit p margins */
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+
+
+/* SVG Data URI & Border Image */
+.alerte-css {
+    position: absolute;
+    top: 80px;
+    left: 5%;
+    right: 0;
+    width: 90%;
+}
+/* SVG Data URI & Border Image */
+.alerteError-css {
+    position: absolute;
+    top: 80px;
+    left: 5%;
+    right: 0;
+    width: 90%;
+}
+
+/*************************************************************
+******************************************************
+*****************************************************
+****************************************************
+**************************************************
+************************************************
+************************************************
+********************************************
+ */
+
+.module {
+    height: 120px;
+    margin: 0 0 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.module p {
+    margin: 0;
+}
+
+.line-clamp {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.overflowpower{
+     overflow: hidden;
+     display: -webkit-box;
+     -webkit-line-clamp: 3;
+     -webkit-box-orient: vertical;
+ }
+.overflowSurnom{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.overflow-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
+    text-overflow: ellipsis;
+}
+.fa-star{
+    width: 20%;
+}
+
+
+
+/* Page AC */
+/*
+ * Globals
+ */
+
+.AcButton .btn:hover{
+    background-color: #740f00;
+    color: white;
+}
+
+.AcButton .btn{
+    background-color: #000;
+    color: white;
+}
+
+
+.bluetodocard{
+    background-color: white;
+    color: black;
+}
+.bluetodocard a{
+    text-decoration: none;
+    color: black;
+}
+
+.card:hover .bluetodocard, .card:hover .bluetodocard a,.card:hover .bluetodocard i{
+    background-color: #2980b9 ! important;
+    color: white ! important;
+}
+
+
+
+
+
+/************************************************************************************
+ Html, body
+ Structure de Base
+  **************************************************************************************/
+
+html,
+body {
+    height: 100%;
+    background: url("") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body {
+    font-family: Helvetica;
+    text-align: center;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+/************************************************************************************
+ Header
+  **************************************************************************************/
+
+/* utilisé dans la page d'accueil */
+.masthead {
+    margin-bottom: 2rem;
+}
+
+.masthead-brand {
+    margin: 0;
+}
+.masthead,
+.mastfoot,
+.cover-container {
+    width: 50%;
+}
+
+/************************************************************************************
+ Links
+  **************************************************************************************/
+
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+/************************************************************************************
+ Button
+  **************************************************************************************/
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritance from `body` */
+    background-color: #fff;
+    border: .05rem solid #fff;
+}
+/* bouton de connexion page accueil  */
+#co{
+    font: bold 30px Helvetica, Sans-Serif;
+    margin-top: 7%;
+    font-size: 20px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+#co:hover {
+    position: relative;
+    top: -3px;
+    left: -3px;
+    text-decoration: none;
+}
+
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+}
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+    padding: 2rem;
+}
+
+
+/************************************************************************************
+ NavBar
+  **************************************************************************************/
+
+.navbar h3 a{
+    color: #fff;
+    text-shadow: 1px 1px #000;/* , 2px 2px #000 , 3px 3px #000;*/
+    font: bold 40px Impact, Sans-Serif;
+    -webkit-transition: all 0.12s ease-out;
+    -moz-transition: all 0.12s ease-out;
+    -ms-transition: all 0.12s ease-out;
+    -o-transition: all 0.12s ease-out;
+}
+.navbar h3 a:hover{
+    position: relative;
+    top: -1px;
+    left: -1px;
+    text-decoration: none;
+    text-shadow: 1px 1px #000;/*, 2px 2px #000 , 3px 3px #000 , 4px 4px #000 , 5px 5px #000 , 6px 6px #000;*/
+}
+.navbar-Orange{
+    padding: 0% 1%;
+    background-color: #000  !important;
+}
+/* orrange ba5826 */
+.navbar-nav{
+    margin-right: 1%;
+}
+.navbar-Orange .navbar-nav .active a{
+    /*border: 1px solid;
+    border-radius: 5px;
+    border-color: white;*/
+    color:#740f00 ;
+}
+.navbar-Orange .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/************************************************************************************
+ NavBar Dropdown Menu
+  **************************************************************************************/
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+
+    color: white !important;
+    text-decoration: none;
+    background-color: #740f00;
+
+}
+
+/************************************************************************************
+ NavBar Notif
+  **************************************************************************************/
+
+.notif span{
+    color: #000;
+    background-color: white;
+}
+.notif .dropdown-menu{
+    padding: 0;
+}
+.notif .card{
+    margin-top: .25rem;
+    margin-bottom: 0;
+}
+/* permet d'afficher les card en colonne*/
+.card-columns {
+    column-count: 1;
+}
+
+.card-columns-ListeEv{
+    column-count: 2;
+}
+
+
+/* Corps de la card */
+.card-body{
+    padding: 0;
+}
+.card:hover .card-body{
+    color: white;
+    background-color:#740f00 ;
+}
+
+.card-body .row{
+    margin: 0;
+}
+.card-body p{
+    min-height: 48px;
+    padding-left: 11%;
+}
+.card-body img{
+    padding: 0% ! important;
+}
+.cardim{
+    height: 10% ! important;
+}
+
+.invit{
+    cursor: pointer;
+}
+/* partie inferieur du card qui affiche la date de l'événement ou depuis quand une
+    notif a était envoyé */
+.card-footer{
+    padding: 0;
+    padding-left: 2%;
+    background-color: #2980b9;
+}
+.card-footer small{
+    color: white !important;
+}
+.card:hover .card-footer{
+    background-color:white ;
+}
+.card:hover .card-footer small{
+    color: #2980b9 !important;
+}
+
+.livreOrderBy .active{
+    color: #740f00;
+}
+.livreOrderByuser .active{
+    color: #740f00;
+}
+#Tache .important{
+    background-color: #b91d19 ! important;
+    min-height: 10px;
+}
+#Tache .moyen{
+    background-color: #b94e0f ! important;
+    min-height: 10px;
+}
+#Tache .faible{
+    background-color: #37b932 ! important;
+    min-height: 10px;
+}
+.updateTache .col-lg-8,.updateTache .col-lg-4,.updateTache .col-12{
+    margin-top: 5%;
+}
+
+#myUpdateModal .btn{
+    margin-top: 5%;
+}
+/************************************************************************************
+ NavBar Barre de recherch
+  **************************************************************************************/
+
+#search:focus {
+    color: white;
+    background-color: #740f00;
+    border-color: white;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0, 6, 17, 0.25);
+
+}
+#search::placeholder {
+    color: white;
+}
+
+#search {
+    color: white;
+    background:black;
+}
+
+#isbn:focus {
+    color: #740f00;
+    background-color: white;
+    border-color: black;
+
+}
+#isbn::placeholder {
+    color: #740f00;
+}
+
+#isbn {
+    color: #740f00;
+    background:white;
+}
+
+/************************************************************************************
+ NavBar Logo Page Accueil
+  **************************************************************************************/
+
+#Watcher a{
+    color: #fff;
+    text-shadow: 1px 1px #2980b9 ;/* , 2px 2px #2980b9 , 3px 3px #2980b9;*/
+    font: bold 40px Impact, Sans-Serif;
+    -webkit-transition: all 0.12s ease-out;
+    -moz-transition: all 0.12s ease-out;
+    -ms-transition: all 0.12s ease-out;
+    -o-transition: all 0.12s ease-out;
+}
+#Watcher a:hover {
+    position: relative;
+    top: -1px;
+    left: -1px;
+    text-decoration: none;
+    text-shadow: 1px 1px #2980b9 ;/*, 2px 2px #2980b9 , 3px 3px #2980b9 , 4px 4px #2980b9 , 5px 5px #2980b9 , 6px 6px #2980b9;*/
+}
+/* 3771ba*/
+
+/************************************************************************************
+ Page Accueil bouton connexion
+  **************************************************************************************/
+
+#co{
+    color: #fff;
+    background-color: transparent;
+    border: .05rem solid #fff;
+    text-shadow: 1px 1px #2980b9;/*,2px 2px #2980b9, 3px 3px #2980b9;*/
+    box-shadow: 1px 1px #2980b9;/*,2px 2px #2980b9, 3px 3px #2980b9;*/
+}
+#co:hover {
+    box-shadow: 1px 1px #2980b9;/*, 2px 2px #2980b9, 3px 3px #2980b9, 4px 4px #2980b9, 5px 5px #2980b9, 6px 6px #2980b9;*/
+}
+
+
+/************************************************************************************
+ Page Connexion lien pour inscription
+  **************************************************************************************/
+
+#insc a{
+    color: #fff;
+/*text-shadow: 1px 1px #2980b9;*/
+    -webkit-transition: all 0.12s ease-out;
+    -moz-transition: all 0.12s ease-out;
+    -ms-transition: all 0.12s ease-out;
+    -o-transition: all 0.12s ease-out;
+}
+#insc a:hover {
+    position: relative;
+    top: -1px;
+    left: -1px;
+    text-decoration: none;
+    text-shadow: 1px 1px #740f00;/*, 2px 2px #2980b9 , 3px 3px #2980b9;*/
+}
+
+
+/************************************************************************************
+ definie les espace entre le div est la navbar mais aussi avec le footer
+  **************************************************************************************/
+
+.marginTBB{
+    margin-top: 7%;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.marginTBB header{
+    margin-top: 0;
+}
+
+/* Shine */
+.shine {
+    height: 10px;
+    background-image: radial-gradient(farthest-side at 50% -50%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    position: relative;
+    margin-bottom: 0;
+}
+
+.shine::before {
+    height: 1px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0));
+}/* Shine */
+.shineDark {
+    height: 10px;
+    background-image: radial-gradient(farthest-side at 50% -50%, rgba(116, 15, 0, 0.5), rgba(116, 15, 0, 0));
+    position: relative;
+    margin-bottom: 0;
+}
+
+.shineDark::before {
+    height: 1px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(90deg, rgba(116, 15, 0, 0), rgba(116, 15, 0, 0.75) 50%, rgba(116, 15, 0, 0));
+}
+
+.hero{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.hero:hover {
+    background-color: #740f00;
+    color: white;
+}
+.HeroDImage{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.HeroDDesc {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+.pagination {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin-top: 10px;
+}
+.pagination li {
+    display: inline;
+    text-align: center;
+}
+.pagination a {
+    float: left;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 12px;
+    color: #fff;
+    margin-left: -1px;
+    border: 1px solid transparent;
+    line-height: 1.5;
+}
+.pagination a.active {
+    cursor: default;
+}
+.pagination a:active {
+    outline: none;
+}
+
+.p1 a.next, .p1 a.prev {
+    color: #740f00;
+}
+
+
+
+/************************************************************************************
+ Carrousel
+  **************************************************************************************/
+
+
+.carousel-control-prev-icon{
+    background-image: url("theme/ressource/Arrowleft_svg.svg.png");
+}
+
+.carousel-control-next-icon{
+    background-image: url("theme/ressource/ArrowRight_svg.png");
+}
+.carousel-control-next:hover, .carousel-control-prev:hover{
+    background: black;
+    opacity: .3;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 5%;
+}
+.carousel-item .container{
+    padding: 0%;
+}
+.carousel-item .container button{
+    width: 50%;
+    margin: 20%;
+    background: transparent;
+
+}
+.carousel-item .container:hover button i{
+    color: white;
+}
+
+
+/************************************************************************************
+ Page Compte partie gauche
+  **************************************************************************************/
+
+
+#CompteLeft img {
+    width: 70%;
+    margin-left: 15%;
+}
+#CompteLeft .btn {
+    background-color: #2980b9;
+    color: white;
+
+}
+#CompteLeft .btn:hover {
+    background-color: white;
+    color: #2980b9;
+
+}
+
+/************************************************************************************
+ Page event header
+  **************************************************************************************/
+
+.header-event .btn {
+    background-color: #2980b9;
+    color: white;
+}
+.header-event .btn:hover {
+    background-color: white;
+    color: #2980b9;
+
+}
+/************************************************************************************
+ Page Compte partie Droite
+  **************************************************************************************/
+
+#CompteRight fieldset{
+    display: inline-block;
+    float: left;
+}
+/************************************************************************************
+ Page Compte Liste d'amis
+  **************************************************************************************/
+
+.amis {
+    height: 300px;
+    overflow: auto;
+}
+.amis .card-body{
+    padding-bottom: 2%;
+}
+.ami{
+    display: inline-block;
+    padding: 0;
+    float: left;
+}
+.ami h5{
+    text-align: center;
+}
+
+/************************************************************************************
+ Page Compte partie événement crée
+  **************************************************************************************/
+
+.EVeCre{
+    height: 200px;
+    overflow: auto;
+}
+.EVeCre p {
+    display: contents;
+}
+.EVeCre img{
+    display: inline-block;
+    padding: 0%;
+}
+.EVeCre .col-sm-9{
+    padding-left: 1%;
+    padding-right: 0;
+}
+
+/************************************************************************************
+ Page Accueil partie gauche
+  **************************************************************************************/
+.EVePubPriv .container{
+    padding: 0% ! important;
+}
+
+.EVePubPriv .card-body{
+    padding-bottom: 1%;
+}
+
+.EVePubPriv{
+    height: 400px;
+    overflow: auto;
+}
+.EVePubPriv p {
+    display: contents;
+}
+.EVePubPriv img{
+    display: inline-block;
+    padding: 0%;
+    padding-top: 1%;
+}
+.EVePubPriv .card-body{
+    padding-bottom: 1%;
+}
+/************************************************************************************
+ Page Compte partie Notification
+  **************************************************************************************/
+
+.Notifs{
+    height: 200px;
+    overflow: auto;
+}
+/************************************************************************************
+ Page Accueil ou Connexion inscription genere l'ombre en arriere plan
+  **************************************************************************************/
+
+/* ombre au milieu*/
+.ombreCo{
+    background-color: #101010;
+    border-radius: 5px;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 25%;
+    right: 25%;
+    bottom: 0;
+    opacity: 0.7;
+    padding-top: 5%;
+}
+.ombreAc{
+    background-color: #101010;
+    border-radius: 5px;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 25%;
+    right: 25%;
+    bottom: 0;
+    opacity: 0.3;
+    padding-top: 5%;
+}
+/************************************************************************************
+ Connexion inscription formulaire input
+  **************************************************************************************/
+
+/* bouton du haut page Ac */
+input{
+    background: transparent;
+    padding: 1%;
+    border-radius: 5px;
+    color: white;
+}
+.insc input{
+    font-size: 12px;
+
+}
+.insc span{
+    font-size: 15px;
+}
+form h3{
+    text-align: left;
+}
+form .btn{
+    margin-top: 5%;
+}
+#btnCo{
+    margin-top: 20px;
+}
+#btnCo:hover{
+    color: #000;
+    background-color: white;
+    border: .05rem solid #000;
+}
+/************************************************************************************
+ Page Accueil ,connexion logoUl
+  **************************************************************************************/
+
+/* img ul */
+.univL{
+    width: 60%;
+}
+/************************************************************************************
+ Page C
+  **************************************************************************************/
+
+#erreurForm{
+    color: red;
+    background-color: transparent;
+    border-color: red;
+    opacity: .7;
+}
+
+
+.close{
+    color: red;
+    text-shadow:none;
+    filter: none;
+    opacity: 1;
+}
+.help-block{
+    color: red;
+    opacity: .7;
+}
+/************************************************************************************
+ Formulaire Creer event
+  **************************************************************************************/
+
+.encadre{
+    border: .05rem solid #fff;
+}
+
+/************************************************************************************
+ icon password
+  **************************************************************************************/
+
+.eye{
+    display: block;
+    color: white;
+}
+
+.password + .unmask {
+    position: absolute;
+    right: 7%;
+    top: 5px;
+    text-indent: 0px;
+    /*width: 20px;*/
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    -webkit-appearance: none;
+}
+/*
+.password + .unmask:before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    z-index: 1;
+    border-radius: 50%;
+}
+.password[type="text"] + .unmask:after {
+    position:absolute;
+    top:4px; left:4px;
+    width: 13px;
+    height: 13px;
+    background: transparent;
+    z-index:2;
+    border-radius: 50%;
+}
+*/
+.formTitle{
+    text-align: center;
+}
+
+
+.nav-masthead {
+    margin-top: 1%;
+}
+.masthead-brand {
+    float: left;
+}
+.nav-masthead {
+    float: right;
+}
+@media (min-width: 48em) {
+
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+    padding: 0 1.5rem;
+}
+.cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+}
+
+
+/*
+ * Affix and center
+ */
+@media (min-width: 40em) {
+    /* Pull out the header and footer */
+    .masthead {
+        position: fixed;
+        top: 0;
+    }
+    .mastfoot {
+        position: fixed;
+        bottom: 0;
+    }
+
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+
+    /* Handle the widths */
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        /* Must be percentage or pixels for horizontal alignment */
+    }
+}
+
+
+/************************************************************************************
+ margin des inputs lors des formulaire
+  **************************************************************************************/
+
+.margin-both-lg-2{
+    margin: 0 16.666667%;
+}
+
+/************************************************************************************
+ datepicker
+  **************************************************************************************/
+
+.ui-datepicker-header{
+    background: #2980b9 ! important;
+    color: white ! important;
+}
+.ui-datepicker-calendar thead {
+    color: #2980b9 ! important;
+}
+
+.ui-datepicker-calendar  .ui-datepicker-today a{
+    background: #5d97b9 ! important;
+    color: white ! important;
+}
+
+.ui-datepicker-calendar  .ui-datepicker-today  a:hover{
+    background: white ! important;
+    color: #5d97b9 ! important;
+}
+.ui-datepicker-calendar  .ui-state-default{
+    background: #2980b9 ! important;
+    color: white ! important;
+}
+
+.ui-datepicker-calendar  .ui-state-default:hover{
+    background: white ! important;
+    color: #2980b9 ! important;
+}
+
+/************************************************************************************
+ Modal & popup
+  **************************************************************************************/
+
+.info{
+    background-color:green ;
+    text-align: center;
+    padding: 0.5%;
+    color: white;
+}
+.error{
+    background-color:red ;
+    text-align: center;
+    padding: 2%;
+    color: white;
+}
+
+
+.myInvitModal{
+    z-index: 1000; /* Sit on top */
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #740f00;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;
+    color: black;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #740f00;
+    color: white;
+}
+
+.modal-body .radio{
+    float: left;
+}
+
+.myInvitPOP{
+    z-index: 1000; /* Sit on top */
+}
+
+/* The Modal (background) */
+.POP {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.POP-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+.POP-header {
+    padding: 2px 16px;
+    background-color: #740f00;
+    color: white;
+}
+
+.POP-body {padding: 2px 16px;
+    color: black;}
+
+.POP-footer {
+    padding: 2px 16px;
+    background-color: #740f00;
+    color: white;
+}
+
+.POP-body .radio{
+    float: left;
+}
+
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.FootunivL{
+    width:95%;
+    opacity: .8;
+}
+footer .col-md-6{
+    padding-top: 2%;
+}
+
+.participantT p{
+    min-height: 0px;
+    padding-left: 3%;
+}
+.card-columns-ListeEv img{
+    height: 100px ! important;
+}
+
+
+#CompteRight .ami img{
+    height: 125px;
+}
+ .marginTBB{min-height: 700px;}
+
+/************************************************************************************
+ search
+  **************************************************************************************/
+ .searchContact img{
+     height: 150px;
+ }
+ .searchContact .ami{
+     margin: 1.5%!important;
+     background-color: white;
+     color: black;
+ }
+
+.searchContact  .card:hover .card-body{
+    background-color: white;
+    color: #740f00;
+}
+.Watchersbtn {
+    color: white;
+    background-color: #740f00 ;
+}
+.btnchoose{
+    color:#fff ;
+    background-color: #000;
+}
+
+.btnchoose:hover{
+    color:#fff ;
+    background-color: #740f00;
+}
+/************************************************************************************
+ card-pub
+  **************************************************************************************/
+.card-pub .col-2 {
+    padding: 0;
+    text-align: center;
+}
+.card-pub .col-2 a{
+    padding: 0;
+}
+
+.card-pub .col-7{
+    padding-right: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+
+}
+.card-pub .col-7 .h5-overflow{
+
+    position: absolute;
+
+    bottom: 0;
+}
+.card-pub .col-7 .h5-overflow strong {
+    float: none !important;
+}
+
+.card-pub .col-9{
+    padding-right: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+
+}
+.card-pub .col-9 .h5-overflow{
+
+    position: absolute;
+
+    bottom: 0;
+}
+.card-pub .col-9 .h5-overflow strong {
+    float: none !important;
+}
+
+.h1-overflow{
+    overflow:hidden;
+    white-space:nowrap;
+    width:100%;
+    text-overflow:ellipsis;
+    font-size: 2.5rem;
+}
+.h2-overflow{
+    overflow:hidden;
+    white-space:nowrap;
+    width:100%;
+    text-overflow:ellipsis;
+    font-size: 2rem;
+}
+
+.h3-overflow{
+    overflow:hidden;
+    white-space:nowrap;
+    width:100%;
+    text-overflow:ellipsis;
+    font-size: 1.75rem;
+}
+
+.h4-overflow{
+    overflow:hidden;
+    white-space:nowrap;
+    width:100%;
+    text-overflow:ellipsis;
+    font-size: 1.25rem;
+}
+
+.h5-overflow{
+    overflow:hidden;
+    white-space:nowrap;
+    width:100%;
+    text-overflow:ellipsis;
+    font-size: 1.25rem;
+}
+.h6-overflow{
+    overflow:hidden;
+    white-space:nowrap;
+    width:100%;
+    text-overflow:ellipsis;
+    font-size: 1rem;
+}
+.p-overflow{
+    overflow:hidden;
+    white-space:nowrap;
+    width:100%;
+    text-overflow:ellipsis;
+    font-size: 0.75rem;
+}
+
+.EVeCre  .col-9 .p-overflow{
+
+    position: absolute;
+
+    bottom: 0;
+}
+.EVeCre  .col-9 .p-overflow strong {
+    float: none !important;
+}
+
+
+
+
+/************************************************************************************
+    eventDetail
+  **************************************************************************************/
+
+#eventDetail .btn_ev{
+    position: absolute;
+    bottom: 0;
+}
+#eventDetail .btn_ev button{
+    min-width: 25px;
+}
+#eventDetail .btn_ev a{
+    display: inline-block;
+
+}
+
+.carousel-img{
+    padding: 0%;
+    max-height: 200px;
+    min-height: 200px;
+}
+
+.dropdown-respon{
+    display: none;
+}
+
+#EventDListeMembre .form-group{
+    display: block;
+}
+#EventDListeMembre button{
+    display: none;
+}
+
+#eventDetail #imgEvent{
+    width: 25% ! important;
+    max-width: 25% ! important;
+}
+#eventDetail #infoEvent{
+    width: 50% ! important;
+    max-width: 50% ! important;
+}
+#eventDetail #dateEvent{
+    width: 25% ! important;
+    max-width: 25% ! important;
+}
+#eventDetail .btn_ev {
+    position: relative;
+    bottom: 0;
+}
+#Watcher img{
+    width: 300px;
+}
+
+#Watcher .logo{
+    width: 250px;
+}
+
+#modalAjoutTache .btnTypeTache{
+    margin:1% 1% 1% 0%;
+    float: right;
+}
+
+.card:hover .footer-Db small{
+color: white !important;
+}
+.card:hover .footer-Df small{
+    color: white!important;
+}
+.card:hover .hoverW small{
+    color: white!important;
+}
+
+
+.button-toggle-navigation {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 0.25em solid #fafafa;
+    border-top: 0.25em solid #fafafa;
+    font-size: 12px;
+    cursor: pointer;
+    height: 1.5em;
+    margin: .75em .375em;
+    outline: 0;
+    position: relative;
+    transition: border-color 150ms ease-out, -webkit-transform 150ms ease-out;
+    transition: border-color 150ms ease-out, transform 150ms ease-out;
+    transition: border-color 150ms ease-out, transform 150ms ease-out, -webkit-transform 150ms ease-out;
+    width: 2.25em;
+}
+.button-toggle-navigation::after, .button-toggle-navigation::before {
+    border-bottom: 0.25em solid #fafafa;
+    bottom: .375em;
+    content: '';
+    height: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transition: -webkit-transform 200ms ease-out;
+    transition: transform 200ms ease-out;
+    transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
+}
+.button-toggle-navigation span {
+    color: transparent;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+.isActive {
+    border-color: transparent;
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+}
+.isActive::after, .isActive::before {
+    transition: -webkit-transform 200ms ease-out;
+    transition: transform 200ms ease-out;
+    transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
+}
+.isActive::after {
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+.isActive::before {
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.fieldset1
+{
+    border:2px solid #000611;
+    padding: 0% 2%;
+}
+.fieldset2
+{
+    border:2px solid #740f00;
+    color: #740f00;
+    padding: 0% 2% 2% 2% ;
+}
+
+
+.modalSuppSerie{
+    padding-right: 17px;
+    display: block;
+}
+
+
+@media  screen  and  (max-width: 1024px) {
+    /* img ul */
+    .univL{
+        width:80%;
+    }
+    #Watcher a{
+        font: bold 35px Impact, Sans-Serif;
+    }
+    #co {
+        font-size: 18px;
+    }
+    .masthead, .mastfoot, .cover-container {
+        width: 70%;
+    }
+    .ombreAc,.ombreCo{
+        right: 15%;
+        left: 15%;
+    }
+
+    #CompteRight legend{
+        font-size: 1.25rem;
+    }
+    #CompteRight h5 {
+        font-size: 1rem;
+    }
+    #CompteRight p {
+        font-size: 0.75rem;
+    }
+}
+
+/************************************************************************************
+ responsive  nav bar
+  **************************************************************************************/
+
+@media screen and (max-width: 992px ){
+    #dateEvent .btn{
+        font-size: 14px;
+    }
+    .dropdown-respon{
+        display: block;
+    }
+    #No-REs{
+        display: none ;
+    }
+    .card-columns-ListeEv .h1-overflow{
+        font-size: 1.80rem;;
+    }
+    .card-columns-ListeEv .h5-overflow{
+        font-size: 0.90rem;;
+    }
+    .card-columns-ListeEv img{
+        height: 75px ! important;
+    }
+    .nonResponsive {
+        display: none;
+    }
+    #search{
+        width: 100%;
+    }
+    .dropdown-menu {
+        left: -350%;
+    }
+
+    .amis {
+        height: 200px;
+        overflow: auto;
+    }
+
+    .EVeCre .col-sm-9{
+        padding-left: 1%;
+        padding-right: 0;
+    }
+}
+
+
+@media  screen  and  (max-width: 900px) {
+
+    #ListeEv .card-pub{
+        width: 100%!important;
+    }
+}
+
+
+@media  screen  and  (max-width: 768px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+    #mymodalupdatecompte{
+        display: block;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+
+    #modalAjoutTache .btnTypeTache{
+        width: 24%;
+        margin:1% 1% 1% 0%;
+    }
+    #Watcher img{
+        width: 200px;
+    }
+    #Watcher .logo{
+        width: 200px;
+    }
+    #CompteRight .ami{
+        width: 33%;
+    }
+    #myUpdateModal .offset-1{
+        margin: 0;
+    }
+    .myInvitEventD .ami{
+        width: 30%;
+    }
+    .myInvitEventD .ami img{
+        height: 100px;
+    }
+    #dateEvent .btn{
+        font-size: 18px;
+    }
+    #eventDetail #imgEvent{
+        width: 40% ! important;
+        max-width: 40% ! important;
+    }
+    #eventDetail #infoEvent{
+        width: 60% ! important;
+        max-width: 60% ! important;
+    }
+    #eventDetail #dateEvent{
+        width: 100% ! important;
+        max-width: 100% ! important;
+    }
+
+    #EventDListeMembre .form-group{
+        display: none;
+    }
+    #EventDListeMembre button{
+        display: block;
+    }
+    .card-columns-ListeEv .h1-overflow{
+        font-size: 1.80rem;;
+    }
+    .card-columns-ListeEv .h5-overflow{
+        font-size: 0.90rem;;
+    }
+    .EVePubPriv .h1-overflow{
+        font-size: 1.80rem;;
+    }
+    .EVePubPriv .h5-overflow{
+        font-size: 0.90rem;;
+    }
+
+    .carousel-item .col-3 img{
+        height: 150px !important;
+    }
+   /* #search{
+        padding: 10% 0% 15% 0%;
+    }*/
+    .searchContact img{
+        height: 125px;
+    }
+
+    .marginTBB {
+        margin-top: 15% !important;
+    }
+    #CompteLeft img {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    #CompteRight .ami img{
+        height: 75px;
+    }
+    #ListeEv{
+        padding: 10% 0% 15% 0%;
+    }
+    .ombreAc,.ombreCo{
+        right: 0%;
+        left: 0%;
+    }
+    .univL{
+        width:100%;
+    }
+    .masthead, .mastfoot, .cover-container {
+        width: 100%;
+    }
+    #Watcher a{
+        font: bold 35px Impact, Sans-Serif;
+    }
+    #co {
+        font-size: 16px;
+    }
+    .univL{
+        width:60%;
+    }
+    .nav-co{
+        float: right;
+    }
+    #Watcher {
+        float: left;
+    }
+    .masthead {
+        margin-bottom: 1.5rem;
+    }
+    .cover{
+        padding: 10% 5% 15% 5%;
+    }
+    main h1{
+        font-size: 2rem;
+    }
+    main .lead {
+        font-size: 1rem;
+    }
+    #FormCo{
+        padding: 0% 5% 15% 5%;
+    }
+
+    #FormCo h1{
+        font-size: 1.75rem;
+        margin: 0%;
+    }
+    #FormCo h3{
+        font-size: 1.25rem;
+    }
+    #FormCo span {
+        font-size: 1rem;
+    }
+    #FormCo p{
+        font-size: 0.75rem;
+    }
+    #FormCo .margin-both-lg-2{
+        margin: 5px 14%;
+    }
+    #insc .col-lg-4{
+        margin: 5px 14%;
+    }
+    #insc .offset-2{
+        margin: 0 !important;
+    }
+    #btnCo{
+        padding: 5px 5px;
+
+        font-size: 1rem;
+    }
+    .mastfoot{
+        display: none;
+    }
+    .ami{
+        width: 20%;
+    }
+
+    .EVeCre .col-sm-3{
+        width: 20%;
+        max-height: 100px;
+    }
+    .EVeCre .col-sm-9{
+        width: 80%;
+    }
+
+}
+
+
+
+@media  screen  and  (max-width: 480px) {
+    #Formupdeux .margin-both-lg-2{
+        margin: 0;
+    }
+    #imgEvent{
+        height: 150px;
+        padding: 0% 10%;
+    }
+    h1 {
+        font-size: 1.90rem;
+    }
+    #modalAjoutTache .btnTypeTache{
+        width: 46%;
+        margin: 1% 2%;
+    }
+    #Watcher .logo{
+        width: 150px;
+    }
+
+    .myInvitEventD h2 {
+
+        font-size: 1.5rem;
+    }
+    .myInvitEventD .ami{
+        width: 50%;
+    }
+    .myInvitEventD .ami img{
+        height: 75px;
+    }
+    #eventDetail #imgEvent{
+        width: 100% ! important;
+        max-width: 100% ! important;
+    }
+    #eventDetail #infoEvent{
+        width: 100% ! important;
+        max-width: 100% ! important;
+    }
+    #eventDetail #dateEvent{
+        width: 100% ! important;
+        max-width: 100% ! important;
+    }
+    nav .dropdown-menu {
+        left: -250% !important;
+    }
+
+
+    .notif .card {
+        width:300px ! important;
+
+    }
+    #carousel-example-1z{
+        display: none;
+    }
+    #eventDetail .btn_ev{
+        position:relative ;
+    }
+    .searchContact .ami{
+        width: 45%;
+    }
+    .marginTBB {
+        margin-top: 17% !important;
+    }
+    #ListeEv .col-sm-3{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    #ListeEv .col-sm-9{
+             -webkit-box-flex: 0;
+             -ms-flex: 0 0 75%;
+             flex: 0 0 75%;
+             max-width: 75%;
+         }
+    #ListeEv .col-sm-7{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+
+    #ListeEv .col-sm-2{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+
+    .card-columns-ListeEv {
+        column-count: 1;
+    }
+    #navbarDropdownMenuLink{
+        font-size: 1rem;
+    }
+
+    #Watcher a{
+        font: bold 25px Impact, Sans-Serif;
+    }
+
+    .navbar h3 a{
+        font: bold 25px Impact, Sans-Serif;
+    }
+
+    #co {
+        font-size: 14px;
+    }
+    .masthead {
+        margin-bottom: 1rem;
+    }
+    #FormCo .margin-both-lg-2{
+        margin: 5px 7%;
+    }
+
+    #FormCo h1{
+        font-size: 1.25rem;
+        margin: 0%;
+    }
+    #FormCo h3{
+        font-size: 1rem;
+    }
+    #FormCo span {
+        font-size: 0.75rem;
+    }
+
+    .carousel-item .col-sm-3{
+        width: 25%;
+    }
+    .carousel-item .col-sm-6{
+        width: 50%;
+    }
+
+}
+
+
+.backcomics {
+    background-color: #101010;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 8%;
+    right: 8%;
+    bottom: 0;
+    opacity: 0.6;
+    padding-top: 5%;
+}
+
+/* serie */
+
+.serieNONComplete {
+    float: right;
+    color: #740f00
+}
+
+.serieComplete {
+    float: right;
+    color: #04740b
+}
+
+/* heros */
+
+.heroImg{
+    padding: 0;
+    height: 240px
+}
+
+.heroShine{
+    border-top: 1px solid #740f00;
+}
+
+.heroCatalogue .card-text{
+    text-decoration: none;
+    color: #000;
+}
+
+.heroCatalogue {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+.heroCatalogue:hover{
+    text-decoration: none;
+}
+.heroCatalogue:hover .card-text{
+    text-decoration: none;
+    color: #fff !important;
+}
+.HeroInfo .infoBase,.infoEquipe{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.HeroInfo .infoHeros{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+.heroInfo .infoLogo{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.paginationShine{
+    margin-top: 2%
+}
+
+/* title */
+
+.TitleWatchers{
+    width:100% ;
+    height: 30px;
+    position:absolute;
+    z-index:-1;
+    border-bottom: 2px solid #740f00;
+    float: left;
+}
+
+.sectionWatchers{
+    width:100% ;
+    height: 30px;
+    position:absolute;
+    /*z-index:-1;*/
+    border-bottom: 2px solid #740f00;
+    float: left;
+    padding: 0;
+}
+
+.TitleWatchers{
+    width:100% ;
+    height: 30px;
+    position:absolute;
+    z-index:-1;
+    border-bottom: 2px solid #740f00;
+    float: left;
+}
+
+.sectionWatchersH{
+    width:100% ;
+    height: 30px;
+    position:absolute;
+    /*z-index:-1;*/
+    border-bottom: 2px solid white;
+    float: left;
+    padding: 0;
+}
+
+.sectionWatchersH i{
+    cursor: pointer;background-color:#740f00;float: right;padding:0% 1%;margin: 20px 0;text-align: right
+}
+.sectionWatchers i{
+    cursor: pointer;background-color:white;float: right;padding:0% 1%;margin: 20px 0;text-align: right
+}
+
+.sectionTitle{
+    z-index: 1;
+    background-color: white
+}
+.sectionTitleH{
+    z-index: 1;
+    background-color: #740f00;
+}
+.page-footer{
+    background-color: #740f00 !important;
+}
+
+.footer-copyright {
+    background-color: #740f00 !important;
+}
+.page-footer-black{
+    background-color: #000 !important;
+}
+
+.footer-copyright- {
+    background-color: #000 !important;
+}
+.rowHeroCatalogue{
+    margin-bottom: 5%;
+}
+
+
+/* GENERAL STYLES */
+
+.pagination{
+    padding: 30px 0;
+}
+
+.pagination ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.pagination a{
+    display: inline-block;
+    padding: 10px 18px;
+    color: #222;
+}
+
+/* ONE */
+
+.p1 a{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    text-align: center;
+}
+
+.p1 a.is-active{
+    background-color: #740f00;
+    border-radius: 100%;
+    color: #fff;
+}
+
+
+.p1 a.next, .p1 a.prev {
+    color: #740f00;
+}
+
+.btn-admin{
+    background-color:#740f00 !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.list-containerSearch {
+    padding: 0;
+    margin: 0.5% 0%;
+}
+.list-containerSearch .card-body{
+    display: none;
+}
+.list-containerSearch .checkbox{
+    padding: 0;
+}
+.list-containerSearch .listInfo{
+}
+.list-containerSearch .list-img{
+    height: 100px;
+}
+
+.card-catalogue{
+    padding: 0;
+}
+.card-catalogue .checkbox{
+    display: none;
+}
+.card-catalogue .listInfo{
+    display: none;
+}
+.card-containerSearch {
+    background: url("../ressources/livre/more.jpg") center no-repeat;
+    background-size: 100% 100%;
+    height: 240px;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    border-radius: 2px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+    padding: 0;
+}
+.card-containerSearch:hover {
+    background-size: 110%;
+    position: relative;
+}
+.card-containerSearch:hover .card-body {
+    left: 0;
+}
+.card-containerSearch:hover .card-body * {
+    opacity: 1;
+}
+.card-containerSearch:hover .card-body:after {
+
+    background: linear-gradient(to bottom right,   rgba(0, 0, 0, 0.5)45%, rgba(0, 0, 0, 0) 50%);
+
+}
+.catalogue .col-12 .card-containerSearch:hover {
+    opacity: 1 !important;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.catalogue .col-12:hover .card-containerSearch{
+    opacity: 0.5 ;
+    box-shadow: none;
+}
+.card-containerSearch .card-body {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 50%;
+    position: relative;
+    left: -50%;
+    transition: all .5s linear;
+    padding: 50px 20px;
+}
+.card-containerSearch .card-body:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to bottom right,   rgba(0, 0, 0, 0.5)20%, rgba(0, 0, 0, 0) 50%);
+    position: absolute;
+    top: 0;
+    right: -20%;
+}
+.card-containerSearch .card-body * {
+    transition: all .5s linear;
+    opacity: 0;
+    color: #333;
+
+}
+
+
+
+.success-box {
+    margin:50px 0;
+    padding:10px 10px;
+    border:1px solid #eee;
+    background:#f9f9f9;
+}
+
+.success-box img {
+    margin-right:10px;
+    display:inline-block;
+    vertical-align:top;
+}
+
+.success-box > div {
+    vertical-align:top;
+    display:inline-block;
+    color:#888;
+}
+
+
+
+/* Rating Star Widgets Style */
+.rating-stars ul {
+    list-style-type:none;
+    padding:0;
+
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+.rating-stars ul > li.star {
+    display:inline-block;
+
+}
+
+/* Idle State of the stars */
+.rating-stars ul > li.star > i.fa {
+    font-size:2em; /* Change the size of the stars */
+    color:#ccc; /* Color on idle state */
+}
+
+/* Hover state of the stars */
+.rating-stars ul > li.star.hover > i.fa {
+    color: #9a0f00;
+}
+
+/* Selected state of the stars */
+.rating-stars ul > li.star.selected > i.fa {
+    color:#740f00;
+}
+
+.card-containerSearch .card-body button {
+     background: transparent;
+}
+.card-containerSearch .card-body button  i{
+
+    color: white;
+}
+
+.card-containerSearch .fa-star{
+    color:#740f00;
+}
+
+.overflow{
+    overflow:hidden;
+    white-space:nowrap;
+    width:100%;
+    text-overflow:ellipsis;
+    font-size: 1rem;
+    color: white!important;
+}
+
+@media  screen  and  (max-width: 768px) {
+    .comics{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .nav-barre{
+        display: none;
+    }
+    #search{
+        margin-bottom: 1%;
+    }
+    .heroCatalogue{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .HeroDImage{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .HeroDDesc {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    .HeroInfo .infoBase,.infoEquipe{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .HeroInfo .infoHeros{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    .heroInfo .infoLogo{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .marginTBBhero {
+        margin-top: 5% !important;
+    }
+}
+@media  screen  and  (max-width: 460px) {
+    .comics{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .chart{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        border: none !important;
+    }
+
+    .AcButton div{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 15px !important;
+        padding-left: 15px!important;
+    }
+    .AcButton a{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 15px !important;
+        padding-left: 15px!important;
+    }
+    .heroCatalogue {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33%;
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+    .rowHeroCatalogue .card-cascade{
+        padding: 0px 5px;
+    }
+    .HeroInfoGeneral{
+
+    }
+    .HeroInfoGeneral .col-12 {
+        margin: 0% !important;
+    }
+    .HeroDImage {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin: 0% 25%;
+    }
+    .HeroDDesc{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .HeroInfoLivre{
+        margin: 0% !important;
+    }
+}
+
+
+

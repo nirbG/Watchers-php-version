@@ -1,0 +1,101 @@
+/* Your custom styles */
+
+.navbar{
+    background-color: red;
+}
+
+.page-footer {
+    color: white;
+    background-color: #263238;
+}
+.footer-copyright{
+    background-color: #37474F;
+}
+ul,li{
+    list-style: none;
+}
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.marginTBB{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+/* search input */
+
+.has-error-search input{
+    border-color: red;
+}
+
+/* bouton ajout */
+
+.containerListButton {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+/*.containerListButton img {
+    width: 100%;
+    height: auto;
+}*/
+
+.containerListButton .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 5px 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 60px;
+    text-align: center;
+}
+
+.containerListButton .btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.containerListButton .btnInfo {
+    padding: 4px 12px;
+    top: 25%;
+    left: 50%;
+}
+
+.containerListButton .btnEnvie {
+    top: 50%;
+    left: 50%;
+}
+
+.containerListButton .btnAdd {
+    top: 75%;
+    left: 50%;
+}
+
+.backBtn{
+    background-color: #101010;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 16%;
+    right: 16%;
+    bottom: 0;
+    opacity: 0.6;
+    padding-top: 5%;
+}
+
+.deco{
+    background: black;
+    text-align: center;
+    float: right;
+    color: white;
+}

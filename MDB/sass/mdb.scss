@@ -1,0 +1,66 @@
+/*!
+ * Material Design for Bootstrap 4
+ * Version: MDB FREE 4.4.3
+ *
+ *
+ * Copyright: Material Design for Bootstrap
+ * https://mdbootstrap.com/
+ *
+ * Read the license: https://mdbootstrap.com/license/
+ *
+ *
+ * Documentation: https://mdbootstrap.com/
+ *
+ * Getting started: https://mdbootstrap.com/getting-started/
+ *
+ * Tutorials: https://mdbootstrap.com/bootstrap-tutorial/
+ *
+ * Templates: https://mdbootstrap.com/templates/
+ *
+ * Support: https://mdbootstrap.com/support/
+ *
+ * Contact: office@mdbootstrap.com 
+ *
+ * Atribution: Animate CSS, Twitter Bootstrap, Materialize CSS, Normalize CSS, Waves JS, WOW JS, Toastr, Chart.js , Hammer.js
+ *
+ */
+
+@charset "UTF-8";
+
+// Bootstrap //
+
+@import "mdb/free/data/_functions";
+@import "mdb/free/data/_variables-b4";
+
+// MDB Framework //
+@import "mdb/free/data/_prefixer";
+@import "mdb/free/data/_mixins";
+@import "mdb/free/data/_colors";
+@import "mdb/free/data/_variables";
+@import "mdb/free/_global";
+@import "mdb/free/_animations";
+@import "mdb/free/_helpers";
+@import "mdb/free/_typography";
+@import "mdb/free/_buttons";
+@import "mdb/free/_cards-basic";
+@import "mdb/free/_dropdowns";
+@import "mdb/free/_navbar";
+@import "mdb/free/_pagination";
+@import "mdb/free/_badge";
+@import "mdb/free/_breadcrumb";
+@import "mdb/free/_modals";
+@import "mdb/free/_progress";
+@import "mdb/free/_carousel-basic";
+@import "mdb/free/_collapse";
+@import "mdb/free/_jumbotron";
+@import "mdb/free/_masks";
+@import "mdb/free/_waves";
+@import "mdb/free/_forms-basic";
+@import "mdb/free/_msc";
+@import "mdb/free/_footer";
+@import "mdb/free/_list-group";
+@import "mdb/free/_tables";
+@import "mdb/free/_deprecated";
+
+// Custom Sass
+@import "mdb/_custom";
